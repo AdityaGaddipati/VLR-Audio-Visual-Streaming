@@ -5,15 +5,16 @@
 layout: page
 ---
 
-- [Abstract](#Abstract)
-- [Introduction](#Introduction)
-- [Related Work](#Related)
-- [Problem Statement](#Problem)
-- [Proposed Model](#Proposed)
-- [Experimentation Methodology](#Experimentation)
-- [Results and Discussion](#Results)
-- [Conclusion and Future Work](#Conclusion)
-- [References](#References)
+- [Abstract](#1-abstract)
+- [Introduction](#2-introduction)
+- [Related Work](#3-related-work)
+- [Problem Statement](#4-problem-statement)
+- [Proposed Model](#5-proposed-model)
+- [Experimentation Methodology](#6-experimentation-methodology)
+- [Results and Discussion](#7-results-and-discussion)
+- [Conclusion and Future Work](#8-conclusion-and-future-work)
+- [References](#9-references)
+- [Code](#code)
 
 ## 1. Abstract
 
@@ -173,4 +174,6 @@ autoregressive models, 2021.235
 [8] Afouras, T., J. S. Chung, A. Zisserman. Lrs3-ted: a large-scale dataset for visual speech236
 recognition, 2018.
 
+## Code
 
+[VLR-Audio-Visual-Streaming](https://github.com/AdityaGaddipati/VLR-Audio-Visual-Streaming)

@@ -20,7 +20,7 @@
 
 title: Streaming Audio-Visual Speech Recognition (SAVSR)
 email: agaddipa@andrew.cmu.edu karthikg@andrew.cmu.edu
-description: 16822 Visual Learning and Recognition Course Project
+description: 16-822 Visual Learning and Recognition
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -29,7 +29,7 @@ baseurl: "VLR-Audio-Visual-Streaming/" # the subpath of your site, e.g. /blog
 url: "https://adityagaddipati.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # twitter_username: jekyllrb
-github_username:  AdityaGaddipati karthik19967829
+#github_username:  AdityaGaddipati
 
 # Build settings
 theme: minima
