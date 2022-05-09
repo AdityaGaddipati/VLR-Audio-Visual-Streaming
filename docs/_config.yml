@@ -29,7 +29,7 @@ baseurl: "VLR-Audio-Visual-Streaming/" # the subpath of your site, e.g. /blog
 url: "https://adityagaddipati.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # twitter_username: jekyllrb
-github_username:  AdityaGaddipati
+github_username:  AdityaGaddipati karthik19967829
 
 # Build settings
 theme: minima

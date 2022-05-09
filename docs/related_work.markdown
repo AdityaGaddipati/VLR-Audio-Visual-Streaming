@@ -52,4 +52,8 @@ where $y_t_{i,b}$ denotes the label at the i-th time step of the b-th block. Not
 The TM-CTC framework has two decoders for each stream, (audio, video), where CTC decoder contains 6 multi-head attention blocks and S2S decoder contains 6 decoder blocks. [5] adds another reliability measure encoder, with a sumbsampling layer which is fed into a BLSTM based decision fusion network (DFN). The main difference between TM-CTC is that given the output of TM-CTC decoders, $p_{ctc}(s|o)$ and $p_{s2s}(s|o)$, they concatenate these with reliability embedding vector $\xi_a$ and $\xi_v$ produced by reliability measure encoder. Then this concated vector is feeded into BLSTM based $DFN_{ctc}$ and $DFN_{s2s}$ to produce log probabilities $\log p_{ctc}(s|o)$ and $\log p_{s2s}(s|o)$.
 -->
 
-![image](assets/images/pic10.png)
+![image](assets/images/pic12.png)
+
+## Fusing Information Streams
+
+![image](assets/images/pic13.png)
