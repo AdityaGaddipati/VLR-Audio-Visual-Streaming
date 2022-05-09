@@ -2,6 +2,7 @@
 layout: page
 title: Related Work
 permalink: /related_work/
+use_math: true
 ---
 
 ## Audio-Visual Speech Recognition Models
