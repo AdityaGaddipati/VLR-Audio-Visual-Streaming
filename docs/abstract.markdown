@@ -1,0 +1,7 @@
+---
+layout: page
+title: Abstract
+permalink: /abstract/
+---
+
+Streaming audio-visual speech recognition (SAVSR) introduces an online setting to audio-visual speech recognition (AVSR), which frees the full utterance requirement prior to decoding that traditional speech recognition models are limited to. Streaming audio-visual speech recognition further challenges the model leaving itself to decide how much the model should wait to have retrieved enough information to start decoding. While transformer based models such as AvHuBERT \cite{avHubert} have been successful in AVSR tasks through pretraining and cross-modal interactions, these models suffer in achieving reasonable Real-Time Factor (RTF) which is necessary for communication agents. We propose \href{https://github.com/chorongi/espnet_multimodal}{ESPnet Mulimodal}, a multimodal framework integrated to ESPnet\cite{ESPNET}, and provide baseline results for the task SAVSR. We also propose a streaming transformer\cite{contextual_blockwise}. and multimodal fusion based model for SAVSR. Through ESPnet Mulitmodal, we expect to facilitate research in the field of audio-visual tasks including SAVSR. \footnote{Link to ESPnet Multimodal gitHub repo: \url{https://github.com/chorongi/espnet_multimodal}}
