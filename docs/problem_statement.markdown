@@ -29,7 +29,7 @@ Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always ha
 
 <figure>
     <center>
-    <img src="images/pic11.png">
+    <img src="/assets/images/pic11.png">
     </center>
 </figure>
 
