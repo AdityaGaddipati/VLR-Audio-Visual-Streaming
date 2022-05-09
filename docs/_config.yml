@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Audio Visual Streaming
+title: Streaming Audio-Visual Speech Recognition (SAVSR)
 email: agaddipa@andrew.cmu.edu karthikg@andrew.cmu.edu
 description: 16822 Visual Learning and Recognition Course Project
 
