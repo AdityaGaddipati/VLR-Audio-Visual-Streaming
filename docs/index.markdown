@@ -56,7 +56,7 @@ The release of LRS2 and LRS3 dataset led to significant increase in the research
 
 [7] proposes a streaming approach for transformer based speech recognition models. 
 The main contributions of the paper are as follows: 
-1) A blockwise synchronous beam search algorithm using BBD is proposed, which is incorporated with the contextual block processing of the encoder in CTC/attention hybrid decoding scheme. 2) Knowledge distillation [27–29] is performed on the streaming Transformer, guided by the original batch Transformer. 3) The proposed streaming Transformer algorithm is compared with conventional approaches including MoChA. The results indicate our approach outperforms them in the HKUST [30] and AISHELL-1 [31] Mandarin, LibriSpeech [32] English, and CSJ [33] Japanese tasks. 4) The impact of each factor in the proposed blockwise synchronous beam search on latency is evaluated through an ablation study
+1) A blockwise synchronous beam search algorithm using BBD is proposed, which is incorporated with the contextual block processing of the encoder in CTC/attention hybrid decoding scheme. 2) Knowledge distillation is performed on the streaming Transformer, guided by the original batch Transformer. 3) The proposed streaming Transformer algorithm is compared with conventional approaches including MoChA. The results indicate our approach outperforms them in the HKUST and AISHELL-1 Mandarin, LibriSpeech English, and CSJ Japanese tasks. 4) The impact of each factor in the proposed blockwise synchronous beam search on latency is evaluated through an ablation study
 
 [4] proposes a sequence to sequence model with attention for audio visual speech recognition. The authors compare two papers one with visual adaption CTC and the other with global attention.
 
