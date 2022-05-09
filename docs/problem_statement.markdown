@@ -7,6 +7,7 @@ use_math: true
 
 # Streaming Audio-Visual Speech Recognition (SAVSR)
 
+<!--
 Given a video utterance of time duration $$ T $$ with frame rate $$ F $$, we extract aligned sequence of visual features $v_1, v_2, v_3, \cdot \cdot \cdot v_{k_t}$ and audio features $a_1, a_2, a_3, \cdot\cdot\cdot a_{k_t}$, where $k_t \in \{1, \cdot \cdot \cdot T\times F\}$. We aim to accurately predict the text-script $c_1, c_2, ..., c_s$ corresponding to the utterance only available at time-step $t$. 
 
 <figure>
@@ -24,6 +25,13 @@ Thus, using CTC decoding as a decoding strategy where we maximize the negative l
 </figure>
 
 Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always have the full-length utterance available at decoding time. 
+-->
+
+<figure>
+    <center>
+    <img src="images/pic11.png">
+    </center>
+</figure>
 
 
 <!--

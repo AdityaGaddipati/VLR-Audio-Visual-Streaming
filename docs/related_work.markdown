@@ -42,7 +42,7 @@ Mask-CTC is a non-autoregressive model trained with both CTC objective and mask-
 
 
 # Blockwise Attention and Mask-CTC
-
+<!--
 The core idea of blockwise-attention (BA) is that it simulates the environment when the encoder is only allowed to access limited future context. Each block only attends to the former layer's output within the current block and previous block. They define blockwise attention key, query, values as $[Z^{i-1}_{b-1}, Z^{i-1}_{b}]$, $Z^{i-1}_b$, and $[Z^{i-1}_{b-1}, Z^{i-1}_{b}]$ respectively where $Z^{i}_{b}$ represents the output of encoder layer i at the b-th block. Following the encoder, a 1D depthwise convolution followed by a Conformer structure. Due to the blockwise attention output, the paper performs greedy decoding of each block for blockwise Mask-CTC defined as the following:
 
 <figure>
@@ -53,8 +53,6 @@ The core idea of blockwise-attention (BA) is that it simulates the environment w
 
 where $y_t_{i,b}$ denotes the label at the i-th time step of the b-th block. Note that blocks are consecutive blocks throughout the utterance with small overlaps. The paper further improves inference time through dynamic mapping approach for overlapping inference recovering erroneous output at the boundaries. 
 
-
-<!--% Paper Detail 2-->
 ## Fusing Information Streams
 
 [5] builds upon ESPnet and TM-CTC by incorporating reliability information in a decision fusion net that considers the temporal effects of the attention mechanism. Similar to Masked-CTC loss we defined above, ESPnet improves convergence by using a linear combination of sequence-to-sequence (S2S) transformer objective and CTC objective as the following. 
@@ -66,3 +64,8 @@ where $y_t_{i,b}$ denotes the label at the i-th time step of the b-th block. Not
 </figure>
 
 The TM-CTC framework has two decoders for each stream, (audio, video), where CTC decoder contains 6 multi-head attention blocks and S2S decoder contains 6 decoder blocks. [5] adds another reliability measure encoder, with a sumbsampling layer which is fed into a BLSTM based decision fusion network (DFN). The main difference between TM-CTC is that given the output of TM-CTC decoders, $p_{ctc}(s|o)$ and $p_{s2s}(s|o)$, they concatenate these with reliability embedding vector $\xi_a$ and $\xi_v$ produced by reliability measure encoder. Then this concated vector is feeded into BLSTM based $DFN_{ctc}$ and $DFN_{s2s}$ to produce log probabilities $\log p_{ctc}(s|o)$ and $\log p_{s2s}(s|o)$.
+-->
+
+<figure>
+    <img src="/images/pic10.png">
+</figure>
