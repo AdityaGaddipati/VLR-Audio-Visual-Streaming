@@ -36,9 +36,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
-markdown: kramdown
+# markdown: kramdown
 # kramdown:
 #  math_engine: katex
+
+mrkdown: maruku
 
 # Exclude from processing.
 # The following items will not be processed, by default.
