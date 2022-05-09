@@ -6,11 +6,7 @@ permalink: /results/
 
 We present our baseline results for unimodal, and multimodal models for SAVSR in Table 1.
 
-<figure>
-    <center>
-    <img src="/images/pic8.png">
-    </center>
-</figure>
+![image](assets/images/pic8.png)
 
 # Baseline results
 From AV-HuBERT baseline metric results, we can observe that combining both vision and speech features help improve performance compared to the unimodal models. For unimodal models, we observe that working with the speech only features AV-HuBERT already achieves good performance based on their extensive pre-training, but is also able to leverage vision features from the mouth of the speaker to resolve similarly pronounced words such as "relative" and "belated". However, providing only vision features severely harms the performance, which is an expected result since humans are also inaccurate in predicting words only from reading lips.
@@ -28,8 +24,4 @@ We also experienced that providing the entire visual input deteriorates performa
 # Qualitative Analysis
 We provide failure example results for the same utterance for our models in Table 2. From the qualitative results, we can identify that adding ROI features help fix word errors due to similar pronunciation. Also we observe that streaming models lack context and suffer from more grammatical errors. 
 
-<figure>
-    <center>
-    <img src="/images/pic9.png">
-    </center>
-</figure>
+![image](assets/images/pic9.png)

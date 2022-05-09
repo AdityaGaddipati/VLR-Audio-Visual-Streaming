@@ -16,11 +16,7 @@ We train on Adam optimizer with learning rate 0.002, weight decay 0.000001, grad
 # Evaluation Metrics
 Word Error Rate (WER) is the most commonly used accuracy measure for ASR where it is calculated by dividing the number of errors (substitution, insertion, deletion) by the total number words in a sequence. We additionally use Latency as our evaluation metric from keeping track of the timestamp of "end of utterance" and "end of prediction" to evaluate the streaming ability of the model. 
 
-<figure>
-    <center>
-    <img src="/images/pic7.png">
-    </center>
-</figure>
+![image](assets/images/pic7.png)
 
 # Vision Features
 

@@ -10,42 +10,16 @@ use_math: true
 <!--
 Given a video utterance of time duration $$ T $$ with frame rate $$ F $$, we extract aligned sequence of visual features $v_1, v_2, v_3, \cdot \cdot \cdot v_{k_t}$ and audio features $a_1, a_2, a_3, \cdot\cdot\cdot a_{k_t}$, where $k_t \in \{1, \cdot \cdot \cdot T\times F\}$. We aim to accurately predict the text-script $c_1, c_2, ..., c_s$ corresponding to the utterance only available at time-step $t$. 
 
-<figure>
-    <center>
-    <img src="/images/pic4.png">
-    </center>
-</figure>
+![image](assets/images/pic4.png)
 
 Thus, using CTC decoding as a decoding strategy where we maximize the negative log likelihood of the entire sequence, we predict corresponding text $\hat{c}_{1:s}$ by,
 
-<figure>
-    <center>
-    <img src="/images/pic5.png">
-    </center>
-</figure>
+![image](assets/images/pic5.png)
 
 Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always have the full-length utterance available at decoding time. 
 -->
 
-<!--figure>
-    <center>
-    <img src="https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/docs/assets/images/pic11.png">
-    </center>
-</figure>
-
-<figure>
-    <center>
-    <img src="https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/images/pic11.png">
-    </center>
-</figure-->
-
-![image](/assets/images/pic11.png)
-
 ![image](assets/images/pic11.png)
-
-![image](/images/pic11.png)
-
-![image](images/pic11.png)
 
 <!--
 % \subsection{Continuous Emotion Recognition (CER)}
