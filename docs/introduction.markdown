@@ -6,7 +6,7 @@ permalink: /introduction/
 
 Recently, advances in deep learning and transformer models have dramatically improved performance of end-to-end automatic speech recognition (ASR). Specifically, models with joint transformer with Connectionist Temporal Classification (CTC) decoding technique provide impressive performance results for acoustic speech recognition tasks ([1] [4]). Moreover, models tend to use multi-modal fusion techniques to aid missing or unreliable information from one modality [5].
 
-However, human dialogue happens in a online fashion where the listener instantaneously interprets the speaker's intent before the speaker finishes and parallelly starts preparing for a response. For powerful transformer models to be applied to communication agents in the real world, it should be able to start making decisions before the entire input signal is even available to produce an instant response to the speaker. 
+However, human dialogue happens in an online fashion where the listener instantaneously interprets the speaker's intent before the speaker finishes and parallelly starts preparing for a response. For powerful transformer models to be applied to communication agents in the real world, it should be able to start making decisions before the entire input signal is even available to produce an instant response to the speaker. 
 Therefore, we assert that studying streaming audio-visual speech recognition is crucial in mainly two aspects:
 
 1. Streaming audio-visual speech recognition models human communication more accurately, whereby studying models for this task will provide insight on how machines should interpret and process language in real-life settings.

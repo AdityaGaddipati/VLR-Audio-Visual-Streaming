@@ -19,16 +19,16 @@ layout: page
 
 Streaming audio-visual speech recognition (SAVSR) introduces an online setting to audio-visual speech recognition (AVSR), which frees the full utterance requirement prior to decoding that traditional speech recognition models are limited to. Streaming audio-visual speech recognition further challenges the model leaving itself to decide how much the model should wait to have retrieved enough information to start decoding. While transformer based models such as AvHuBERT [1] have been successful in AVSR tasks through pretraining and cross-modal interactions, these models suffer in achieving reasonable Real-Time Factor (RTF) which is necessary for communication agents. We propose [ESPnet Mulimodal](https://github.com/chorongi/espnet_multimodal), a multimodal framework integrated to ESPnet [2], and provide baseline results for the task SAVSR. We also propose a streaming transformer [3]. and multimodal fusion based model for SAVSR. Through ESPnet Mulitmodal, we expect to facilitate research in the field of audio-visual tasks including SAVSR.
 
+## 2. Introduction
+
 Recently, advances in deep learning and transformer models have dramatically improved performance of end-to-end automatic speech recognition (ASR). Specifically, models with joint transformer with Connectionist Temporal Classification (CTC) decoding technique provide impressive performance results for acoustic speech recognition tasks ([1] [4]). Moreover, models tend to use multi-modal fusion techniques to aid missing or unreliable information from one modality [5].
 
-However, human dialogue happens in a online fashion where the listener instantaneously interprets the speaker's intent before the speaker finishes and parallelly starts preparing for a response. For powerful transformer models to be applied to communication agents in the real world, it should be able to start making decisions before the entire input signal is even available to produce an instant response to the speaker. 
+However, human dialogue happens in an online fashion where the listener instantaneously interprets the speaker's intent before the speaker finishes and parallelly starts preparing for a response. For powerful transformer models to be applied to communication agents in the real world, it should be able to start making decisions before the entire input signal is even available to produce an instant response to the speaker. 
 Therefore, we assert that studying streaming audio-visual speech recognition is crucial in mainly two aspects:
 
 1. Streaming audio-visual speech recognition models human communication more accurately, whereby studying models for this task will provide insight on how machines should interpret and process language in real-life settings.
 
 2. Studying application of powerful transformer models in a streaming environment will unveil hidden caveats for real-life applications that have not been studied, and further facilitate the development of truly human-like, real-time communication agents.
-
-## 2. Introduction
 
 Non-autoregressive (NAR) models have been studied for streaming sequence-to-sequence tasks, but have been unsuccessful due to strong conditional independence assumptions of CTC. Mask-CTC models [6] and approaches using blockwise-attention [7] have been proposed to mitigate this problem. However, these techniques have been only introduced to tasks such as machine translation and speech recognition, leaving the area of streaming audio-visual speech recognition unexplored. The main technical challenges of SAVSR are of the following:
 <!-- Identify Main Technical Challenges -->
@@ -130,7 +130,7 @@ We also experimented on Conformer encoder - transformer decoder (Conf-trans) mod
 However, compared to Av-HuBERT or Conformer transformer model, our contextualized streaming model was able to achieve much faster latency due to block-wise decoding. We find that the performance trade-off for latency is not huge since the majority of samples are human understandable for Streaming models. 
 
 # 7.2 Vision Integrated Models
-We have experimented on early fusion of vision features with audio features before the encoder-decoder framework. For each of the models we experienced a increase of performance in accuracy. Based on qualitative results, we have observed that addition of vision features help distinguish words with similar pronunciation through visual features of lip readings. For example, errors such as confusing "workforce" to "work first" were fixed by adding mouth roi features. However, the addition of features result into lower performance in latency due to increased parameters of the model and 
+We have experimented on early fusion of vision features with audio features before the encoder-decoder framework. For each of the models we experienced a increase of performance in accuracy. Based on qualitative results, we have observed that addition of vision features help distinguish words with similar pronunciation through visual features of lip readings. For example, errors such as confusing "workforce" to "work first" were fixed by adding mouth roi features. However, the addition of features result into lower performance in latency due to increased parameters of the model.
 
 We also experienced that providing the entire visual input deteriorates performance, where the model has trouble to focusing on the mouth features of the captured image that should be used for the task. Moreover, we observed that fusing visual features and audio features tend to harm convergence during the training process, which commonly lead to training failures such as overfitting to the model. 
 
@@ -142,7 +142,7 @@ We provide failure example results for the same utterance for our models in Tabl
 
 ## 8. Conclusion and Future Work
 
-In this course project, we take the first step on streaming audio visual speech recognition which can pave way to multiple multiple interaction related tasks using a block-wise streaming Conformer based on contextual block processing and block-wise synchronous beam search. We also propose a technique to combine pre-trained vision and speech models by matching their frame-rates via an alignment aware upsampling technique for the visual features so that they combined fused along the time axis. This fusions along time axis allows to extend techniques that work for unimodal speech recognition to multimodal audio-visual speech recognition. 
+In this course project, we take the first step on streaming audio visual speech recognition which can pave way to multiple interaction related tasks using a block-wise streaming Conformer based on contextual block processing and block-wise synchronous beam search. We also propose a technique to combine pre-trained vision and speech models by matching their frame-rates via an alignment aware upsampling technique for the visual features so that they are fused along the time axis. This fusion along time axis allows to extend techniques that work for unimodal speech recognition to multimodal audio-visual speech recognition. 
 
 ## 9. References
 
