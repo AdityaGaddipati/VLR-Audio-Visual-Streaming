@@ -2,6 +2,7 @@
 layout: page
 title: Problem Statement
 permalink: /problem_tatement/
+use_math: true
 ---
 
 # Streaming Audio-Visual Speech Recognition (SAVSR)
