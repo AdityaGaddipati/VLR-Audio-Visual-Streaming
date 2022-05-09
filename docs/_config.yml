@@ -20,12 +20,14 @@
 
 title: Audio Visual Streaming
 email: agaddipa@andrew.cmu.edu karthikg@andrew.cmu.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  16822 Visual Learning and Recognition Course Project
+description: 16822 Visual Learning and Recognition Course Project
+
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 baseurl: "VLR-Audio-Visual-Streaming/" # the subpath of your site, e.g. /blog
 url: "https://adityagaddipati.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
 # twitter_username: jekyllrb
 github_username:  AdityaGaddipati
 
@@ -33,9 +35,10 @@ github_username:  AdityaGaddipati
 theme: minima
 plugins:
   - jekyll-feed
-markdown: kramdown
-kramdown:
-  math_engine: katex
+
+#markdown: kramdown
+#kramdown:
+#  math_engine: katex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
