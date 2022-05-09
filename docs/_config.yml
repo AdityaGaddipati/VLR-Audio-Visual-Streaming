@@ -32,7 +32,7 @@ url: "https://adityagaddipati.github.io/" # the base hostname & protocol for you
 github_username:  AdityaGaddipati
 
 # Build settings
-theme: jekyll-theme-leap-day
+theme: minima
 plugins:
   - jekyll-feed
 
