@@ -29,10 +29,21 @@ Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always ha
 
 <figure>
     <center>
-    <img src="/assets/images/pic11.png">
+    <img src="assets/images/pic11.png">
     </center>
 </figure>
 
+<figure>
+    <center>
+    <img src="/docs/assets/images/pic11.png">
+    </center>
+</figure>
+
+<figure>
+    <center>
+    <img src="docs/assets/images/pic11.png">
+    </center>
+</figure>
 
 <!--
 % \subsection{Continuous Emotion Recognition (CER)}
