@@ -9,29 +9,11 @@ use_math: true
 
 Given a video utterance of time duration $$ T $$ with frame rate $$ F $$, we extract aligned sequence of visual features $v_1, v_2, v_3, \cdot \cdot \cdot v_{k_t}$ and audio features $a_1, a_2, a_3, \cdot\cdot\cdot a_{k_t}$, where $k_t \in \{1, \cdot \cdot \cdot T\times F\}$. We aim to accurately predict the text-script $c_1, c_2, ..., c_s$ corresponding to the utterance only available at time-step $t$. 
 
-Some inline Latex: $$a^2 + b^2 = c^2$$
-
-Display equation:
-
-$$\int e^{-kx} \, dx = -\frac{1}{k} e^{-kx}$$
-
-Let's test some inline math $x$, $y$, $x_1$, $y_1$.
-
-Now a inline math with special character: $|\psi\rangle$, $x'$, $x^\*$.
-
-Test a display math:
-$$
-   |\psi_1\rangle = a|0\rangle + b|1\rangle
-$$
-Is it O.K.?
-
-
-
-<!--figure>
+<figure>
     <center>
     <img src="/images/pic4.png">
     </center>
-</figure-->
+</figure>
 
 Thus, using CTC decoding as a decoding strategy where we maximize the negative log likelihood of the entire sequence, we predict corresponding text $\hat{c}_{1:s}$ by,
 
