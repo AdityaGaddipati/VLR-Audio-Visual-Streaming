@@ -27,7 +27,7 @@ Thus, using CTC decoding as a decoding strategy where we maximize the negative l
 Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always have the full-length utterance available at decoding time. 
 -->
 
-<figure>
+<!--figure>
     <center>
     <img src="https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/docs/assets/images/pic11.png">
     </center>
@@ -37,7 +37,15 @@ Note that for an ordinary AVSR task, $k_t = T \times F$ where we would always ha
     <center>
     <img src="https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/images/pic11.png">
     </center>
-</figure>
+</figure-->
+
+![image](/assets/images/pic11.png)
+
+![image](assets/images/pic11.png)
+
+![image](/images/pic11.png)
+
+![image](images/pic11.png)
 
 <!--
 % \subsection{Continuous Emotion Recognition (CER)}
