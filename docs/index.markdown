@@ -5,6 +5,9 @@
 layout: page
 ---
 
+Karthik Ganesan  (karthikg@andrew.cmu.edu) <br>
+Aditya Gaddipati (agaddipa@andrew.cmu.edu)
+
 [https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/](https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming/)
 
 - [Abstract](#1-abstract)
