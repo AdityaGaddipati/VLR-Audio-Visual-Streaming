@@ -1,9 +1,7 @@
-
+[https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming](https://adityagaddipati.github.io/VLR-Audio-Visual-Streaming)
 
 Karthik Ganesan  (karthikg@andrew.cmu.edu) <br>
 Aditya Gaddipati (agaddipa@andrew.cmu.edu)
-
-[Streaming Audio Visual ASR](https://github.com/AdityaGaddipati/VLR-Audio-Visual-Streaming/tree/main/streaming_audio_visual_asr)
 
 - [Abstract](#1-abstract)
 - [Introduction](#2-introduction)
